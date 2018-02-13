@@ -3,9 +3,9 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 
-const passport = require('passport');
-const passport = require('passport-local');
-const bcrypt = require('bcrypt');
+//const passport = require('passport');
+//const passport = require('passport-local');
+//const bcrypt = require('bcrypt');
 
 const form = require('./form');
 const admin = require('./admin');
