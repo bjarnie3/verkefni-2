@@ -18,8 +18,10 @@ body {
   font-size: 16px;
   background-color: #eee;
   color: #333;
-  margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
-  padding: 10px 10Px;
+  display: flex;
+  flex-flow: 0 1 auto;
+  justify-content:auto;
+  align-content:0;
+  align-items:auto;
+
 }
