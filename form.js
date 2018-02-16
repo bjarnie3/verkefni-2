@@ -17,7 +17,7 @@ function ensureLoggedIn(req, res, next){
   if(reg.isAuthenticated()) {
     return next();
   }
-  return res.redirect('/Login');
+  return res.redirect('/');
 }
 
 router.get('/admin', ensureLoggedIn,(req,res) => {

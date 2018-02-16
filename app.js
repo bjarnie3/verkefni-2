@@ -1,11 +1,10 @@
-const path = require('path');
 const express = require('express');
+const path = require('path');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 
 //const passport = require('passport');
-//const passport = require('passport-local');
-//const bcrypt = require('bcrypt');
+//const { Strategy } = require('passport-local');
 
 const form = require('./form');
 const admin = require('./admin');
@@ -30,8 +29,8 @@ function errorHandler(err, req, res, next) { // eslint-disable-line
 }
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-app.listen(port, hostname, () => {
+app.listen(port, () => {
   console.info(`Server running at http://${hostname}:${port}/`);
 });
