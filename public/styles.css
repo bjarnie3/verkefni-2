@@ -23,5 +23,9 @@ body {
   justify-content:auto;
   align-content:0;
   align-items:auto;
-
+  position: absolute;
+    /*right: 300px;
+    width: 100px;*/
+    border: 3px solid #73AD21;
+    padding: 10px;
 }
