@@ -27,10 +27,10 @@ body {
 
 .box {
   display: flex;
-  flex-flow: 0 1 auto;
-  justify-content:auto;
-  align-content:0;
-  align-items:auto;
+  flex-flow: row nowrap;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
   }
   
   
