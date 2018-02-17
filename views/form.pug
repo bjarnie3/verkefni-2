@@ -1,14 +1,18 @@
 extends layout
 
 block content
-  p Form!
-  form(method="post" action="/")
-    p Nafn:
-      input(type="name" name="Nafn")
-    p Netfang:
-      input(type="email" name="Email")
-    p Kennitala:
-      input(type="text" pattern="^[0-9]{6}-?[0-9]{4}$" name="Kennitala")
-    p Fjöldi:
-      input(type="number" name="fjoldi")
-    button Skrá
+  center
+      box
+        p Form!
+        if errorMessages
+          each i in errorMessages
+            form(name="post" method="post" action="/")
+              p Nafn:
+                input(type="name" name="Nafn")
+              p Netfang:
+                input(type="email" name="Email")
+              p Kennitala:
+                input(type="text" pattern="^[0-9]{6}-?[0-9]{4}$" name="Kennitala")
+              p Fjöldi:
+                input(type="number" name="fjoldi")
+              button Skrá

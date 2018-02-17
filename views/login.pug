@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  center
+      box
+        p Log In!
+        if errorMessages
+          each i in errorMessages
+            form(name="post" method="post" action="/login")
+              p Notendanafn:
+                input(type="name" name="UserName" value="admin")
+              p Lykilorð:
+                input(type="password" name="password" value="123")
+              button Innskrá

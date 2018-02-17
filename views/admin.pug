@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  p admin!
+  if errorMessages
+    each i in errorMessages
+      form(name="get" method="get" action="/admin")
+        table#desc
+        th ID
+        th Nafn
+        th Kennitala
+        th Netfang
+        th Dagsetning
+        th Fjoldi
+        p a(href="../") Logga sig út
